@@ -75,7 +75,6 @@ public class GameViewController: UIViewController {
     }
     
     private func goToFirstState() {
-        // Текущий стейт должен быть пустым
         currentState = nil
         goToNextState()
     }
@@ -91,7 +90,6 @@ public class GameViewController: UIViewController {
             player = .first
         }
         
-        // В зависимости от выбранного режима стартуем тот или иной стэйт
         if gameMode == .pvp {
             self.currentState = PlayerInputState(player: player,
                                                  gameViewController: self,
